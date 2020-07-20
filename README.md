@@ -12,14 +12,10 @@
 
 
 #
-[**Go to LinkedIn to watch the video!**](https://www.linkedin.com/posts/berkantbegdilili_swift-swiftui-ios14-activity-6689680123425247232-GXIm "LinkedIN: berkantbegdilili")
+[**Go to LinkedIn to watch the video!**](https://www.linkedin.com/feed/update/urn:li:activity:6691015386764218368/ "LinkedIN: berkantbegdilili")
 
 # Imagery (Görüntüler)
 ![run1](https://github.com/berkantbegdilili/TurkishNews/blob/main/img/image.png)
-
-![run2](https://github.com/berkantbegdilili/TurkishNews/blob/main/img/video.png)
-
- 
 
 #
 > EN: There may be errors or missed places in the algorithms written. Please report the error you found by contacting me.
