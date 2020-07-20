@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BBNewsApp: App {
+    
+    @StateObject var news = NewsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(news)
         }
     }
 }

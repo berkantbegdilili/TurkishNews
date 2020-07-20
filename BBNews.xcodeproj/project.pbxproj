@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,15 @@
 		F8EC3D7124C4CA48006C47AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D7024C4CA48006C47AB /* ContentView.swift */; };
 		F8EC3D7324C4CA49006C47AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EC3D7224C4CA49006C47AB /* Assets.xcassets */; };
 		F8EC3D7624C4CA49006C47AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EC3D7524C4CA49006C47AB /* Preview Assets.xcassets */; };
+		F8EC3D7F24C4CAE8006C47AB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8EC3D7E24C4CAE8006C47AB /* Alamofire */; };
+		F8EC3D8124C4CB06006C47AB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D8024C4CB06006C47AB /* NewsModel.swift */; };
+		F8EC3D8424C4CC8A006C47AB /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D8324C4CC8A006C47AB /* NewsViewModel.swift */; };
+		F8EC3D8624C4D6D4006C47AB /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D8524C4D6D4006C47AB /* NewsListView.swift */; };
+		F8EC3D8824C4DC61006C47AB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D8724C4DC61006C47AB /* NewsView.swift */; };
+		F8EC3D8E24C4F484006C47AB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F8EC3D8D24C4F484006C47AB /* SDWebImageSwiftUI */; };
+		F8EC3D9124C4F698006C47AB /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D9024C4F698006C47AB /* GridStack.swift */; };
+		F8EC3D9524C50CDC006C47AB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D9424C50CDC006C47AB /* WebView.swift */; };
+		F8EC3D9724C50D2E006C47AB /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC3D9624C50D2E006C47AB /* NewsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,13 @@
 		F8EC3D7224C4CA49006C47AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8EC3D7524C4CA49006C47AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8EC3D7724C4CA49006C47AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EC3D8024C4CB06006C47AB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		F8EC3D8324C4CC8A006C47AB /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		F8EC3D8524C4D6D4006C47AB /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		F8EC3D8724C4DC61006C47AB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		F8EC3D9024C4F698006C47AB /* GridStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		F8EC3D9424C50CDC006C47AB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F8EC3D9624C50D2E006C47AB /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EC3D8E24C4F484006C47AB /* SDWebImageSwiftUI in Frameworks */,
+				F8EC3D7F24C4CAE8006C47AB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +70,8 @@
 		F8EC3D6D24C4CA48006C47AB /* BBNews */ = {
 			isa = PBXGroup;
 			children = (
+				F8EC3D8F24C4F688006C47AB /* Supporting Views */,
+				F8EC3D8224C4CC76006C47AB /* News */,
 				F8EC3D6E24C4CA48006C47AB /* BBNewsApp.swift */,
 				F8EC3D7024C4CA48006C47AB /* ContentView.swift */,
 				F8EC3D7224C4CA49006C47AB /* Assets.xcassets */,
@@ -67,6 +87,27 @@
 				F8EC3D7524C4CA49006C47AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8EC3D8224C4CC76006C47AB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC3D8524C4D6D4006C47AB /* NewsListView.swift */,
+				F8EC3D8724C4DC61006C47AB /* NewsView.swift */,
+				F8EC3D9624C50D2E006C47AB /* NewsDetailView.swift */,
+				F8EC3D8324C4CC8A006C47AB /* NewsViewModel.swift */,
+				F8EC3D8024C4CB06006C47AB /* NewsModel.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F8EC3D8F24C4F688006C47AB /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC3D9024C4F698006C47AB /* GridStack.swift */,
+				F8EC3D9424C50CDC006C47AB /* WebView.swift */,
+			);
+			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +126,10 @@
 			dependencies = (
 			);
 			name = BBNews;
+			packageProductDependencies = (
+				F8EC3D7E24C4CAE8006C47AB /* Alamofire */,
+				F8EC3D8D24C4F484006C47AB /* SDWebImageSwiftUI */,
+			);
 			productName = BBNews;
 			productReference = F8EC3D6B24C4CA48006C47AB /* BBNews.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +157,10 @@
 				Base,
 			);
 			mainGroup = F8EC3D6224C4CA48006C47AB;
+			packageReferences = (
+				F8EC3D7D24C4CAE8006C47AB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8EC3D8C24C4F484006C47AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F8EC3D6C24C4CA48006C47AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EC3D8124C4CB06006C47AB /* NewsModel.swift in Sources */,
+				F8EC3D9724C50D2E006C47AB /* NewsDetailView.swift in Sources */,
 				F8EC3D7124C4CA48006C47AB /* ContentView.swift in Sources */,
 				F8EC3D6F24C4CA48006C47AB /* BBNewsApp.swift in Sources */,
+				F8EC3D8824C4DC61006C47AB /* NewsView.swift in Sources */,
+				F8EC3D9124C4F698006C47AB /* GridStack.swift in Sources */,
+				F8EC3D9524C50CDC006C47AB /* WebView.swift in Sources */,
+				F8EC3D8624C4D6D4006C47AB /* NewsListView.swift in Sources */,
+				F8EC3D8424C4CC8A006C47AB /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +384,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8EC3D7D24C4CAE8006C47AB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+		F8EC3D8C24C4F484006C47AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8EC3D7E24C4CAE8006C47AB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EC3D7D24C4CAE8006C47AB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F8EC3D8D24C4F484006C47AB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EC3D8C24C4F484006C47AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8EC3D6324C4CA48006C47AB /* Project object */;
 }
